@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Lora", Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.btn-primary {
+  @apply bg-accent text-paper px-5 py-2.5 rounded-md text-sm font-medium hover:bg-accent-dark transition-colors;
+}
+.btn-secondary {
+  @apply border border-border text-ink px-5 py-2.5 rounded-md text-sm font-medium hover:bg-accent-light transition-colors;
+}
+.card {
+  @apply bg-white border border-border rounded-lg shadow-sm;
+}
+.input {
+  @apply w-full border border-border rounded-md px-3 py-2 text-sm bg-white focus:outline-none focus:ring-1 focus:ring-accent;
+}
